@@ -1,15 +1,107 @@
-### Book_Recommendation_System
+# 📚 Book Recommendation System  
 
-![image](https://github.com/SUDIPA9002/Book_Recommendation_Sys/assets/87785141/9d1eada9-75ec-488e-b812-a512807ceb7c)
+A **machine learning-based book recommendation system** with a modern frontend and Flask backend.  
+This project suggests books to users based on ratings and similarity, with an elegant UI and API integration.  
 
-A book recommendation system built using Machine Learning based on popularity and collaborative filtering.
-I used the power of Machine Learning to provide users with personalized book suggestions. Additionally, I deployed the recommendation system using Flask for easy access and interaction.
-Dataset used: https://www.kaggle.com/datasets/arashnic/book-recommendation-dataset
+---
 
-Medium Blog link: https://medium.com/@sudipakoner492/building-a-book-recommendation-system-using-machine-learning-popularity-and-collaborative-a472aac26a79.
-To know more go and read the blogg for once.
+## 🚀 Features
+- 🔎 **Search & Explore** books  
+- ⭐ **Star ratings** instead of raw numeric ratings  
+- 🌓 **Light/Dark theme** toggle  
+- 📱 **Responsive layout** for mobile and desktop  
+- 📖 **Compact book card display** with cover, title, author, and rating  
+- 🎯 **Personalized Recommendations** using ML models  
+- ⚡ **Flask API backend** for serving recommendations  
 
-Home Page:
+---
 
-![image](https://github.com/SUDIPA9002/Book_Recommendation_Sys/assets/87785141/db393dba-1360-4f42-93e7-f25bcda34f49)
+## 🛠️ Tech Stack
 
+### Frontend  
+- HTML, CSS, JavaScript  
+- React.js  
+- TailwindCSS (for styling)  
+
+### Backend  
+- Python (Flask)  
+- scikit-learn / XGBoost (for ML models)  
+- Pandas, NumPy  
+
+### Database / API  
+- External Book API integration  
+- MySQL (optional for storing user data)  
+
+---
+
+## 📂 Project Structure
+```
+book-recommendation/
+│── backend/           # Flask API backend
+│   ├── app.py         # Main Flask app
+│   ├── model.pkl      # Trained ML model
+│   ├── requirements.txt
+│
+│── frontend/          # React frontend
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── App.js
+│   │   ├── index.js
+│
+│── dataset/           # Dataset used (if applicable)
+│
+│── README.md          # Project documentation
+│── .gitignore
+```
+
+---
+
+## ⚙️ Installation & Setup  
+
+### 1️⃣ Clone the repository  
+```bash
+git clone https://github.com/your-username/book-recommendation.git
+cd book-recommendation
+```
+
+### 2️⃣ Setup Backend  
+```bash
+cd backend
+pip install -r requirements.txt
+python app.py
+```
+
+Backend runs at: `http://127.0.0.1:5000/`
+
+### 3️⃣ Setup Frontend  
+```bash
+cd frontend
+npm install
+npm start
+```
+
+Frontend runs at: `http://localhost:3000/`
+
+---
+
+## 📊 Machine Learning Approach
+- **Content-Based Filtering** using cosine similarity  
+- **Collaborative Filtering** with user-item matrix  
+- Trained on book ratings dataset  
+
+---
+
+## 📸 Screenshots
+(Add screenshots of your UI here — light theme, dark theme, book cards, etc.)
+
+---
+
+## 📌 Future Improvements
+- 🧠 Add **Deep Learning-based recommendations**  
+- 👥 Implement **user authentication**  
+- 📱 Deploy as a **mobile app** with React Native  
+- ☁️ Deploy on **Heroku / Vercel / AWS**  
+
+---
+  
